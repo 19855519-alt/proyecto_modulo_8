@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Hosting y Dominios | CodeBox</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <span>&lt;/&gt;</span> CodeBox
+        </a>
+
+        <button class="menu-btn"
+                onclick="toggleMenu()">
+            ☰
+        </button>
+
+        <ul id="menu">
+
+            <li>
+                <a href="index.html">
+                    Inicio
+                </a>
+            </li>
+
+            <li>
+                <a href="javascript.html">
+                    JavaScript
+                </a>
+            </li>
+
+            <li>
+                <a href="jquery.html">
+                    jQuery
+                </a>
+            </li>
+
+            <li>
+                <a href="json.html">
+                    JSON
+                </a>
+            </li>
+
+            <li>
+                <a href="hosting.html">
+                    Hosting
+                </a>
+            </li>
+
+            <li>
+                <a href="cuestionario.html">
+                    Cuestionario
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+<section class="page-header">
+
+    <span class="tag">
+        TECNOLOGÍA 04
+    </span>
+
+    <h1>Web Hosting y Dominios</h1>
+
+    <p>
+        ¿Cómo conseguimos que un sitio web esté disponible
+        en Internet?
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <h2>¿Qué es Web Hosting?</h2>
+
+    <p>
+        El Web Hosting es un servicio que proporciona espacio
+        y recursos en servidores conectados a Internet para
+        almacenar los archivos de un sitio web.
+    </p>
+
+    <p>
+        Cuando una persona visita una página, el navegador
+        solicita los archivos al servidor y posteriormente
+        los muestra.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <h2>Tipos de Hosting</h2>
+
+    <div class="cards">
+
+        <article class="card">
+
+            <div class="icon">
+                🏠
+            </div>
+
+            <h3>Compartido</h3>
+
+            <p>
+                Varios sitios web utilizan recursos
+                de un mismo servidor.
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <div class="icon">
+                🖥️
+            </div>
+
+            <h3>VPS</h3>
+
+            <p>
+                Un servidor físico se divide en
+                servidores virtuales independientes.
+            </p>
+
+        </article>
+
+
+        <article class="card">
+
+            <div class="icon">
+                ☁️
+            </div>
+
+            <h3>Nube</h3>
+
+            <p>
+                Utiliza recursos distribuidos entre
+                diferentes servidores.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <h2>¿Qué es Vercel?</h2>
+
+    <p>
+        Vercel es una plataforma utilizada para desplegar
+        aplicaciones y sitios web. Puede conectarse con
+        repositorios de GitHub para facilitar el despliegue
+        de proyectos.
+    </p>
+
+    <div class="deployment">
+
+        <div>
+            <strong>1</strong>
+            <p>Crear proyecto</p>
+        </div>
+
+        <span>→</span>
+
+        <div>
+            <strong>2</strong>
+            <p>Subir a GitHub</p>
+        </div>
+
+        <span>→</span>
+
+        <div>
+            <strong>3</strong>
+            <p>Conectar Vercel</p>
+        </div>
+
+        <span>→</span>
+
+        <div>
+            <strong>4</strong>
+            <p>Publicar</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <h2>¿Qué es un dominio?</h2>
+
+    <p>
+        Un dominio es un nombre que permite identificar
+        un sitio web de una forma sencilla.
+    </p>
+
+    <div class="domain-example">
+
+        <span class="subdomain">
+            blog
+        </span>
+
+        <span>.</span>
+
+        <span class="domain">
+            codebox
+        </span>
+
+        <span>.</span>
+
+        <span class="tld">
+            com
+        </span>
+
+    </div>
+
+
+    <div class="domain-info">
+
+        <div>
+            <h3>Subdominio</h3>
+            <p>blog</p>
+        </div>
+
+        <div>
+            <h3>Dominio</h3>
+            <p>codebox</p>
+        </div>
+
+        <div>
+            <h3>TLD</h3>
+            <p>.com</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <h2>¿Qué es un TLD?</h2>
+
+    <p>
+        TLD significa <strong>Top-Level Domain</strong>.
+        Es la parte final de un dominio.
+    </p>
+
+    <div class="cards">
+
+        <article class="card">
+            <h3>.com</h3>
+            <p>Uso comercial y general.</p>
+        </article>
+
+        <article class="card">
+            <h3>.org</h3>
+            <p>Comúnmente utilizado por organizaciones.</p>
+        </article>
+
+        <article class="card">
+            <h3>.net</h3>
+            <p>Originalmente relacionado con redes.</p>
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <h2>Propagación DNS</h2>
+
+    <p>
+        DNS permite relacionar un nombre de dominio con
+        la información necesaria para encontrar el servidor
+        correspondiente. Cuando se modifican registros DNS,
+        los cambios pueden tardar en reflejarse debido
+        al almacenamiento temporal en diferentes sistemas.
+    </p>
+
+
+    <div class="dns-flow">
+
+        <div class="dns-box">
+            👤<br>
+            Usuario
+        </div>
+
+        <span>↓</span>
+
+        <div class="dns-box">
+            🌐<br>
+            Dominio
+        </div>
+
+        <span>↓</span>
+
+        <div class="dns-box">
+            🔎<br>
+            DNS
+        </div>
+
+        <span>↓</span>
+
+        <div class="dns-box">
+            🖥️<br>
+            Servidor
+        </div>
+
+        <span>↓</span>
+
+        <div class="dns-box">
+            📄<br>
+            Página web
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="resources">
+
+    <h3>📚 Recursos consultados</h3>
+
+    <ul>
+
+        <li>Vercel Documentation</li>
+
+        <li>Cloudflare Learning Center</li>
+
+        <li>MDN Web Docs</li>
+
+    </ul>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 CodeBox
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

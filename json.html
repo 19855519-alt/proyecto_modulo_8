@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>JSON | CodeBox</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <span>&lt;/&gt;</span> CodeBox
+        </a>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <ul id="menu">
+
+            <li><a href="index.html">Inicio</a></li>
+
+            <li><a href="javascript.html">
+                JavaScript
+            </a></li>
+
+            <li><a href="jquery.html">
+                jQuery
+            </a></li>
+
+            <li><a href="json.html">
+                JSON
+            </a></li>
+
+            <li><a href="hosting.html">
+                Hosting
+            </a></li>
+
+            <li><a href="cuestionario.html">
+                Cuestionario
+            </a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+<section class="page-header">
+
+    <span class="tag">
+        TECNOLOGÍA 03
+    </span>
+
+    <h1>JSON</h1>
+
+    <p>
+        Un formato utilizado para representar e intercambiar datos.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <h2>¿Qué significa JSON?</h2>
+
+    <p>
+        JSON significa
+        <strong>JavaScript Object Notation</strong>.
+        Es un formato de texto utilizado para representar
+        información de manera organizada.
+    </p>
+
+    <p>
+        Es muy utilizado para intercambiar información entre
+        aplicaciones, páginas web, servidores y APIs.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <h2>¿Cómo se estructura?</h2>
+
+    <div class="cards">
+
+        <article class="card">
+
+            <div class="icon">🔑</div>
+
+            <h3>Clave - valor</h3>
+
+<pre><code>{
+  "nombre": "William"
+}</code></pre>
+
+        </article>
+
+
+        <article class="card">
+
+            <div class="icon">📋</div>
+
+            <h3>Arreglos</h3>
+
+<pre><code>{
+  "lenguajes": [
+    "HTML",
+    "CSS",
+    "JS"
+  ]
+}</code></pre>
+
+        </article>
+
+
+        <article class="card">
+
+            <div class="icon">📦</div>
+
+            <h3>Objetos</h3>
+
+<pre><code>{
+  "usuario": {
+    "nombre": "William",
+    "edad": 16
+  }
+}</code></pre>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <h2>Objeto JavaScript vs cadena JSON</h2>
+
+    <div class="code-comparison">
+
+        <div>
+
+            <h3>Objeto JavaScript</h3>
+
+<pre class="big-code"><code>const usuario = {
+    nombre: "William",
+    edad: 16,
+    activo: true
+};</code></pre>
+
+        </div>
+
+
+        <div>
+
+            <h3>JSON</h3>
+
+<pre class="big-code"><code>{
+    "nombre": "William",
+    "edad": 16,
+    "activo": true
+}</code></pre>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <h2>JSON en aplicaciones web</h2>
+
+    <p>
+        Una página web puede solicitar información a un servidor.
+        El servidor puede responder utilizando JSON.
+    </p>
+
+    <div class="flow">
+
+        <div>🌐<br>Aplicación web</div>
+
+        <span>→</span>
+
+        <div>📡<br>Solicitud</div>
+
+        <span>→</span>
+
+        <div>🖥️<br>Servidor</div>
+
+        <span>→</span>
+
+        <div>📄<br>JSON</div>
+
+        <span>→</span>
+
+        <div>🌐<br>Aplicación</div>
+
+    </div>
+
+</section>
+
+
+<section class="section interactive">
+
+    <h2>Ejemplo interactivo</h2>
+
+    <p>
+        Presiona el botón para convertir un objeto JavaScript
+        en una cadena JSON.
+    </p>
+
+    <button class="btn" onclick="mostrarJSON()">
+        Convertir a JSON
+    </button>
+
+    <pre id="resultadoJSON" class="big-code">
+Aquí aparecerá el resultado.
+    </pre>
+
+</section>
+
+
+<section class="resources">
+
+    <h3>📚 Recursos consultados</h3>
+
+    <ul>
+
+        <li>MDN Web Docs - JSON</li>
+
+        <li>W3Schools - JSON</li>
+
+        <li>JSON.org</li>
+
+    </ul>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+    <p>
+        © 2026 CodeBox
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

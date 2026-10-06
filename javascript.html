@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript | CodeBox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+            <span>&lt;/&gt;</span> CodeBox
+        </a>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <ul id="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="javascript.html">JavaScript</a></li>
+            <li><a href="jquery.html">jQuery</a></li>
+            <li><a href="json.html">JSON</a></li>
+            <li><a href="hosting.html">Hosting</a></li>
+            <li><a href="cuestionario.html">Cuestionario</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<main>
+
+<section class="page-header">
+    <span class="tag">TECNOLOGÍA 01</span>
+    <h1>JavaScript</h1>
+    <p>
+        El lenguaje que permite agregar comportamiento e interactividad
+        a las páginas web.
+    </p>
+</section>
+
+
+<section class="section">
+
+    <h2>¿Qué es JavaScript?</h2>
+
+    <p>
+        JavaScript es un lenguaje de programación utilizado principalmente
+        para agregar interactividad y comportamiento a las páginas web.
+        Permite responder a las acciones realizadas por los usuarios.
+    </p>
+
+    <p>
+        Por ejemplo, JavaScript puede utilizarse para mostrar mensajes,
+        cambiar contenido, validar formularios, crear animaciones y
+        responder cuando una persona presiona un botón.
+    </p>
+
+</section>
+
+
+<section class="section">
+
+    <h2>HTML + CSS + JavaScript</h2>
+
+    <div class="comparison">
+
+        <div class="compare-card">
+            <span>01</span>
+            <h3>HTML</h3>
+            <p>
+                Se encarga de la <strong>estructura</strong>
+                de una página web.
+            </p>
+        </div>
+
+        <div class="compare-card">
+            <span>02</span>
+            <h3>CSS</h3>
+            <p>
+                Se encarga del <strong>diseño y apariencia</strong>.
+            </p>
+        </div>
+
+        <div class="compare-card">
+            <span>03</span>
+            <h3>JavaScript</h3>
+            <p>
+                Se encarga del <strong>comportamiento e interacción</strong>.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <h2>Conceptos básicos</h2>
+
+    <div class="cards">
+
+        <article class="card">
+            <div class="icon">📦</div>
+            <h3>Variables</h3>
+            <p>
+                Guardan información que puede utilizar el programa.
+            </p>
+
+<pre><code>let nombre = "William";</code></pre>
+        </article>
+
+
+        <article class="card">
+            <div class="icon">⚙️</div>
+            <h3>Funciones</h3>
+            <p>
+                Son bloques de código que realizan una tarea.
+            </p>
+
+<pre><code>function saludar() {
+    alert("Hola");
+}</code></pre>
+        </article>
+
+
+        <article class="card">
+            <div class="icon">🖱️</div>
+            <h3>Eventos</h3>
+            <p>
+                Permiten responder a acciones del usuario.
+            </p>
+
+<pre><code>button.addEventListener(
+    "click",
+    saludar
+);</code></pre>
+        </article>
+
+    </div>
+
+</section>
+
+
+<section class="section interactive">
+
+    <h2>Ejemplo práctico</h2>
+
+    <p>
+        Presiona el botón para ejecutar JavaScript.
+    </p>
+
+    <button class="btn" onclick="saludarUsuario()">
+        Ejecutar JavaScript
+    </button>
+
+    <div id="mensajeJS" class="result-box">
+        Aquí aparecerá el resultado.
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <h2>Ejemplo explicado</h2>
+
+<pre class="big-code"><code>function saludarUsuario() {
+
+    let nombre = "estudiante";
+
+    document.getElementById("mensajeJS")
+        .textContent = "¡Hola " + nombre + "!";
+
+}</code></pre>
+
+    <p>
+        Primero se crea una función llamada
+        <strong>saludarUsuario()</strong>. Después se crea una variable
+        llamada <strong>nombre</strong>. Finalmente, JavaScript busca
+        el elemento HTML llamado <strong>mensajeJS</strong> y cambia
+        su contenido.
+    </p>
+
+</section>
+
+
+<section class="resources">
+
+    <h3>📚 Recursos consultados</h3>
+
+    <ul>
+        <li>MDN Web Docs - JavaScript</li>
+        <li>W3Schools - JavaScript</li>
+    </ul>
+
+</section>
+
+</main>
+
+
+<footer>
+    <p>© 2026 CodeBox</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
